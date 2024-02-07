@@ -1,1 +1,1 @@
-# cvpr-2023
+# cvpr-2024 CVinW workshop website
