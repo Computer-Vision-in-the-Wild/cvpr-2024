@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="Workshop on Computer Vision in the Wild 2024" />
+    <meta property="og:url" content="https://computer-vision-in-the-wild.github.io/cvpr-2024/" />
+    <meta property="og:description" content="June 17 at CVPR 2024" />
+    <meta property="og:description" content="CVPR 2024" />
+    <meta property="og:site_name" content="Computer Vision in the Wild 2024" />
+    <meta property="og:image" content="https://computer-vision-in-the-wild.github.io/cvpr-2024/static/cvpr2024/img/head_img/cvpr_2024_header.jpeg" />
+    <meta property="og:image:url" content="https://computer-vision-in-the-wild.github.io/cvpr-2024/static/cvpr2024/img/head_img/cvpr_2024_header.jpeg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Workshop on Computer Vision in the Wild 2024">
+    <meta name="twitter:description" content="June 19 at CVPR 2024">
+    <meta name="twitter:description" content="CVPR 2024">
+    <meta name="twitter:image" content="https://computer-vision-in-the-wild.github.io/cvpr-2024/static/cvpr2024/img/head_img/cvpr_2024_header.jpeg">
+    <title>Computer Vision in the Wild</title>
+    <link rel="stylesheet" href="./static/css/foundation.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/vendor/jquery.js"></script>
+    <script src="./static/js/jquery-2.1.3.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment.min.js"></script>
+    <script type="text/javascript" src="./static/js/moment-timezone-with-data.min.js"></script>
+
+    <script type="text/javascript" src="./static/js/main-vqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-gqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-visdial.js"></script>
+    <script type="text/javascript" src="./static/js/main-textvqa.js"></script>
+    <script type="text/javascript" src="./static/js/main-textcaps.js"></script>
+    <script type="text/javascript" src="./static/js/main-vizwiz.js"></script>
+
+</head>
+<style type="text/css">
+.schedule table {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.schedule tr:hover {
+    background-color: #D3D3D3;
+}
+
+.schedule img {
+    max-height: 95px;
+    max-width: 140px;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+}
+
+.abstract-content {
+    display: none;
+    padding: 5px;
+}
+
+.disclaimer {
+    padding-left: 25px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+}
+.disclaimer b {
+    font-weight: bold !important;
+}
+</style>
+
+<body class="off-canvas hide-extras" style="min-width:1300px; min-height:750px;">
+    <header>
+        <div class="row">
+            <a href="https://computer-vision-in-the-wild.github.io/cvpr-2024"><img style="height: 160px; position:absolute; top:420px; right:26px;" src="./static/cvpr2024/img/head_img/cvpr_2024_logo1.jpeg" alt="logo" /></a>
+            <!-- <h1><img style="height: 200px;" src="./static/eccv2022/img/cvinthewild_logo.jpg" alt="logo" /><br></h1> -->
+            <br>
+        </div>
+    </header>
+    <div class="contain-to-grid">
+        <!-- <nav class="top-bar" data-topbar> -->
+            <!-- <section class="top-bar-section"> -->
+                <!-- Right Nav Section -->
+                <!-- <ul class="right"> -->
+                    <!-- <li><a href="index.html">Home</a></li> -->
+                    <!-- <li><a href="people.html">People</a></li> -->
+                    <!-- <li><a href="code.html">Code</a></li> -->
+                    <!-- <li><a href="http://vqa.cloudcv.org/" onClick="ga('send', 'event', { eventCategory: 'Outgoing Link', eventAction: 'Demo', eventLabel: 'Demo'});">Demo</a></li> -->
+                    <!-- <li class="has-dropdown"><a href="download.html">Download</a> -->
+                        <!-- <ul class="dropdown"> -->
+                            <!-- <li><a href="download.html">VQA v2</a></li> -->
+                            <!-- <li><a href="vqa_v1_download.html">VQA v1</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                    <!-- <li><a href="evaluation.html">Evaluation</a></li>
+                    <li class="has-dropdown"><a href="challenge.html">Challenge</a>
+                        <ul class="dropdown">
+                            <li><a href="challenge.html">2021</a></li>
+                            <li><a href="challenge_2020.html">2020</a></li>
+                            <li><a href="challenge_2019.html">2019</a></li>
+                            <li><a href="challenge_2018.html">2018</a></li>
+                            <li><a href="challenge_2017.html">2017</a></li>
+                            <li><a href="challenge_2016.html">2016</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="has-dropdown"><a href="http://visualqa.org/vqa_v2_teaser.html">Browse</a>
+                        <ul class="dropdown">
+                            <li><a href="http://visualqa.org/vqa_v2_teaser.html">VQA v2</a></li>
+                            <li><a href="https://vqabrowser.cloudcv.org/">VQA v1</a></li>
+
+                        </ul>
+                    </li> -->
+                    <!-- <li><a href="http://visualqa.org/visualize/">Visualize</a></li> -->
+                    <!-- <li class="active has-dropdown"><a href="workshop.html">Workshop</a>
+                        <ul class="dropdown"> -->
+                            <!-- <li><a href="workshop.html"></a></li> -->
+                            <!-- <li><a href="workshop_2020.html">2020</a></li>
+                            <li><a href="workshop_2019.html">2019</a></li>
+                            <li><a href="workshop_2018.html">2018</a></li>
+                            <li><a href="workshop_2017.html">2017</a></li>
+                            <li><a href="workshop_2016.html">2016</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                    <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
+                    <!-- <li><a href="terms.html">Terms</a></li> -->
+                    <!-- <li><a href="external.html">External</a></li> -->
+                <!-- </ul> -->
+            </section>
+        </nav>
+    </div>
+    <section role="main" style="padding: 1em;">
+        <div class="row">
+            <p style="font-size:50px; color:black; font-weight: 50" align=center>The 3rd Workshop on Computer Vision in the Wild <br> 
+                <span style="font-size:30px; color:gray; font-weight: 50" align=center> -- Building General-Purpose Assistants with Large Multimodal Models<br> </span>
+                <span style="font-size:30px; color:gray; font-weight: 50" align=center>@ CVPR 2024, June 17 <br> </span>
+
+<!--                  <span style="font-size:20px; color:gray; font-weight: 30" align=center>9:00am-6:00pm Israeli Time  ||  11:00pm (October 22)-8:00am Pacific Time  ||  2:00pm-11:00pm Beijing Time</span>   -->             
+                <!-- <br> -->
+                <!-- <br> -->
+                <!-- <span style="font-size:20px; color:black; font-weight: 400" align=center>Zoom and Gatherly links on ECCV 2022 website: <a target="_blank" href="https://www.eventscribe.net/2021/2021CVPR/agenda.asp?startdate=6/19/2021&enddate=6/19/2021&BCFO=M&pfp=Workshops&mode=&tn=&cpftwo=&custwo=&pta=/">Link</a> <br> Navigate to: Workshops -> Sat, October 23 -> Search for "Computer Vision in the Wild" workshop entry</b></span> -->
+
+            </p>
+
+
+
+
+        <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Overview</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+
+                A long-standing aspiration in artificial intelligence is to develop general-purpose assistants that can effectively follow users’ (multimodal) instructions to complete a wide range of real-world tasks. Recently, the community has witnessed a growing interest in developing foundation models with emergent abilities of multimodal understanding and generation in open-world tasks. While the recipes of using large language models (LLMs) such as ChatGPT to develop general-purpose assistants for natural language tasks have been proved effective, the recipes of building general-purpose, multimodal assistants for computer vision and vision-language tasks in the wild remain to be explored. Recent works show that learning from large-scale image-text data with human feedback in the loop is a promising approach to building transferable visual models that can effortlessly adapt to a wide range of downstream computer vision (CV) and multimodal (MM) tasks. For example, large multimodal models (LMM) such as Flamingo, GPT-4V, Gemini have demonstrated strong zero-shot transfer capabilities on many vision tasks in the wild. The open-source LMMs have also made significant progress, as demonstrated by OpenFlamingo, <a href="https://minigpt-4.github.io/"> MiniGPT4</a> and <a href="https://llava-vl.github.io/"> LLaVA</a>. These models are trained with visual instruction-following data, where human intents are represented in natural language. On the other hand, interactive vision systems such as <a href="https://github.com/facebookresearch/segment-anything">Segment Anything (SAM)</a> and <a href="https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once">SEEM</a> have also shown impressive segmentation performance on almost anything in the wild, where human intents are represented in visual prompts, such as click, bounding boxes and text. These vision models with language and multimodal interfaces are naturally open-vocabulary and even open-task models, showing superior zero-shot performance in various real-world scenarios.
+
+                We host this “Computer Vision in the Wild (CVinW)” workshop, aiming to gather academic and industry communities to work on CV problems in real-world scenarios, focusing on the challenge of open-world visual task-level transfer. This CVPR 2024 CVinW workshop is a continuation of <a href="https://computer-vision-in-the-wild.github.io/cvpr-2023/"> CVPR 2023 CVinW Workshop</a> and
+                <a href="https://computer-vision-in-the-wild.github.io/eccv-2022/"> ECCV 2022 CVinW Workshop</a>. For those who are new to this topic, please check out the  <a href="https://github.com/Computer-Vision-in-the-Wild/CVinW_Readings/blob/main/README.md">CVinW Reading List</a>.
+                
+                <br>
+                <br>
+                
+                The development of LMMs is an emerging new filed, with a vast research exploration space in data collection, modeling, evaluation and new application scenarios. There are many new benchmarks merged to measure their performance from different aspects. To advocate established benchmarks to measure the progress, this workshop welcome authors different benchmark to run indepedent challenges and report results. Initially, it will also host two challenges:
+                <ul style="font-size:15px;">
+                        <li style="margin-left:30px">
+                            <a href="https://eval.ai/web/challenges/challenge-page/1931/overview"> VisIT-Bench: Vision-Language Instruction Following </a>
+                        </li>
+                        <li style="margin-left:30px">
+                            <a href="https://eval.ai/web/challenges/challenge-page/1973/overview"> COCO Interleaved Visual Understanding Challenge</a>
+                        </li>    
+                </ul>         
+
+                </p>
+            </div>
+            <hr>
+        </div>
+
+
+
+
+
+<!-- Invited Speakers -->
+
+<!-- <div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Keynote Speaker</h1>
+    <div class="team" id="people">
+        <div class="row" style="display: flex; text-align:center; justify-content: center;">
+
+            <div class="large-1 columns">
+                <p></p>
+            </div>
+
+
+            <div class="large-4 columns">
+                <a href="https://www.andrewng.org/"><img src="./static/cvpr2024/img/speakers/andrew-ng.png" class="speaker_picture" style="width:200px; height:200px;">
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Andrew Ng
+                    <br> Founder of <a href="https://www.deeplearning.ai/">DeepLearning.AI</a>, <a href="https://landing.ai/">Landing AI</a>, General Partner at <a href="https://aifund.ai/">AI Fund</a>, Chairman and Co-Founder of <a href="https://www.coursera.org/">Coursera</a> and an Adjunct Professor at Stanford University. </p>
+            </div>
+
+ 
+
+
+            <div class="large-1 columns">
+                <p></p>
+            </div>
+
+
+            <div class="large-1 columns">
+                <p></p>
+            </div>
+        </div>
+
+    <hr>
+</div> -->
+
+
+
+<!-- Invited Speakers -->
+
+    <!-- <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Invited Speakers/Panelists</h1>
+        <div class="team" id="people">
+            <div class="row" style="display: flex; text-align:center; justify-content: center;">
+
+                <div class="large-2 columns">
+                    <a href="https://www.cs.utexas.edu/users/grauman/"><img src="./static/cvpr2024/img/speakers/grauman.jpg"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Kristen Grauman
+                        <br>University of Texas at Austin</p>
+                </div>
+
+                <div class="large-2 columns">
+                    <a href="http://boqinggong.info/"><img src="./static/cvpr2024/img/speakers/boqing_gong.jpg"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Boqing Gong
+                        <br>Google</p>
+                </div>  
+
+                <div class="large-2 columns">
+                    <a href="https://web.eecs.umich.edu/~justincj/"><img src="https://web.eecs.umich.edu/~justincj/images/me-v2.jpg" class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Justin Johnson
+                        <br>University of Michigan | FAIR</p>
+                </div>
+    
+                <div class="large-2 columns">
+                    <a href="https://sites.google.com/site/yinfeiyang"><img src="./static/eccv2022/img/yinfei_yang.jpeg" class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Yinfei Yang 
+                        <br>Apple</p>
+                </div>
+
+
+                <div class="large-2 columns">
+                        <a href="https://bryanplummer.com/"><img src="https://bryanplummer.com/profile.jpg"  class="speaker_picture" style="width:150px; height:150px;">
+                            <br><br>
+                        </a>
+                        <p style="font-size:12px; font-weight: 200;">Bryan A. Plummer
+                            <br>Boston University</p>
+                </div>
+
+                <div class="large-2 columns">
+                    <a href="https://www.leizhang.org/"><img src="./static/cvpr2024/img/speakers/leizhang_square.jpg"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Lei Zhang
+                        <br>International Digital Economy Academy (IDEA)</p>
+                </div>
+
+                <div class="large-1 columns">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row" style="display: flex; text-align:center; justify-content: center;">
+
+
+
+                <div class="large-2 columns">
+                    <a href="https://liuziwei7.github.io/"><img src="./static/eccv2022/img/ziwei_liu.png"   class="speaker_picture" style="width:150px; height:150px;";>
+                            <br><br>
+                        </a>
+                        <p style="font-size:12px; font-weight: 200;">Ziwei Liu
+                            <br>NTU</p>
+                </div>
+                
+                
+                    <div class="large-2 columns">
+                    <a href="https://blog.roboflow.com/author/jacob/"><img src="./static/cvpr2024/img/speakers/jacob.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Jacob Solawetz
+                        <br>Roboflow</p>
+                </div>                            
+
+
+                <div class="large-2 columns">
+                    <a href="https://research.google/people/AneliaAngelova/"><img src="./static/cvpr2024/img/speakers/Anelia.gif"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Anelia Angelova
+                        <br>Google Brain</p>
+                </div>     
+
+                    <div class="large-2 columns">
+                    <a href="https://jiasenlu.github.io/"><img src="https://jiasenlu.github.io/images/profile.jpeg"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Jiasen Lu
+                        <br>Allen Instutite for AI</p>
+                </div>                        
+
+
+                <div class="large-2 columns">
+                    <a href="https://www.cs.cmu.edu/~katef/"><img src="https://www.cs.cmu.edu/~katef/images/stairs.png" target="_blank"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Katerina Fragkiadaki 
+                        <br>CMU</p>
+                </div>                        
+    
+                <div class="large-2 columns">
+                    <a href="https://faculty.cc.gatech.edu/~dbatra/"><img src="./static/cvpr2024/img/speakers/dhruv_batra.jpg"  class="speaker_picture" style="width:150px; height:150px;">
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Dhruv Batra
+                        <br>Georgia Tech | FAIR</p>
+                </div>     
+
+                <div class="large-1 columns">
+                    <p></p>
+                </div>
+                    
+            </div>
+
+        <hr>
+    </div>
+
+
+    <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Tentative Schedule (June 19th, Monday)</h1>
+
+        <div id="content-2">
+            <div class="schedule">
+                <table width="100%">
+
+                    <tr>
+                        <td width=250>
+                            <center><b>8:45 AM - 9:00 AM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="https://www.microsoft.com/en-us/research/uploads/prod/2020/09/20191101_170350330_iOS-4.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px"><b>Welcome</b>
+                            <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><br>Jianfeng Gao - Microsoft Research</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9:00 AM - 9:30 AM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="./static/cvpr2024/img/speakers/andrew-ng.png"></center>
+                        </td>
+                        <td style="padding-left:8px"><b>KeyNote</b>
+                            <a href="https://www.andrewng.org/"><br>Andrew Ng - Landing AI</a>
+                            <br>
+                            <b>Title: Visual Prompting and the Evolving Workflow of Building Vision Applications</b>
+                            <br>
+                            <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                Dr. Andrew Ng is the Founder and CEO of Landing AI, whose flagship product is an enterprise AI platform that allows customers to build and deploy AI-powered visual inspection solutions. Dr. Andrew Ng has helped two of the world’s leading technology companies in their “AI transformation”. He was the founding lead of the Google Brain team as well as the Chief Scientist at Baidu, where he led the company’s ~1300 person AI Group and was responsible for driving the company’s global AI strategy and infrastructure.
+                                Dr. Ng is the Chairman and Co-founder of Coursera, the world’s leading MOOC (Massive Open Online Courses) platform, and an Adjunct Professor at Stanford University’s Computer Science Department. His AI courses have had over 7 million enrollments. Dr. Ng has authored or co-authored over 200 research papers in machine learning, robotics, and related fields. In 2013, he was named to the Time 100 list of the most influential persons in the world. He holds degrees from Carnegie Mellon University, MIT, and the University of California, Berkeley. 
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td colspan="3">
+                        <center>
+                        <br>
+                        <em>
+                        Morning Session On-Site Chair: <a href="https://laoreja.github.io/"> Xiuye Gu (Google) </a> || Online Coordinator: <a href="https://laoreja.github.io/"> Haotian Liu (UW Madison) 
+                        </em>
+                        <br><br>
+                        </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=250>
+                            <center> <b>9:30 AM - 10:00 AM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="./static/cvpr2024/img/speakers/Anelia.gif"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+
+
+                            <a href="https://research.google/people/AneliaAngelova/"><br>Anelia Angelova</a>
+                            <br>
+                            <b>Title: From Objects to Scenes: Understanding the Visual World with Vision & Language Models</b>
+                            <br>
+                            <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                In this talk we will look at several approaches for leveraging vision and language models for the purposes of object detection in the wild: F-VLM, RO-ViT and FindIt. Furthermore, I will introduce our scaled vision-language models (e.g. PaLI and PaLI-X) which have object detection capabilities. And, lastly, I will present our newest work, MaMMUT, which is a much smaller vision-language model, but capable of many vision-language tasks, including image-text and text-image retrieval, open-vocabulary object detection, video question and answering, video captioning, and others. 
+                            </div>
+                            <br>
+                            <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                Anelia Angelova is a research scientist leading the Vision & Language research team and has previously led the Robot Vision team at Google Research (She is currently in Google DeepMind). Her research focuses on multimodal vision and language models, semantic scene understanding, video understanding, 3D scene understanding and robotics. Anelia received her MS and PhD degrees in Computer Science from California Institute of Technology.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=250>
+                            <center> <b>10:00 AM - 10:30 AM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center> 
+                                <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Spotlight Paper Presentations
+                                <img src="https://i.etsystatic.com/43871135/r/il/59ec81/4988653779/il_600x600.4988653779_9o7s.jpg" class=" style=" width="80" height="100" ;>
+                                </h1> 
+                                <b></b>
+                            </center>
+                        </td>
+                        <td style="padding-left:8px">
+                            
+                            <b></b>
+                            <br>
+                                -
+                            <a href="https://arxiv.org/pdf/2207.12661.pdf">MS-CLIP </a> |
+                            <a href="https://scholar.google.com/citations?user=BhysChMAAAAJ&hl=en">Haoxuan You (Columbia University)</a>
+                            <br>
+
+                                -
+                            <a href="./static/eccv2022/accepted_papers/texture_clip_abstract_eccv22.pdf">CLIP understands Texture?</a> |
+                            <a href="https://people.cs.umass.edu/~chenyun/">Chenyun Wu (UMass Amherst)</a>
+                            <br>
+                            
+                            -
+                            <a href="./static/eccv2022/accepted_papers/ECCV_2022_Workshop_Domain_Compatible_Synthetic_Data_Generation.pdf">Synthetic Data for Infrequent OD </a> |
+                            <a href="https://www.linkedin.com/in/ninad-deepak-kulkarni">Ninad Kulkarni (Amazon Web Services)</a>
+                            <br>
+
+                            -
+                            <a href="./static/eccv2022/accepted_papers/xmem.pdf">XMem </a> |
+                            <a href="https://hkchengrex.com/">Ho Kei Cheng (University of Illinois Urbana-Champaign)</a>
+                            <br>
+
+                            -
+                            <a href="./static/eccv2022/accepted_papers/AUGCO_4pg.pdf">AUGCO </a> |
+                            <a href="https://virajprabhu.github.io/">Viraj Prabhu (Georgia Tech)</a>
+                            <br>
+
+                            -
+                            <a href="./static/eccv2022/accepted_papers/ECCV_2022_CV_in_the_Wild_Workshop_USL.pdf">Unsupervised Selective Labeling </a> |
+                            <a href="https://tonylian.com/">Long Lian (UC Berkeley)</a>
+                            <br>
+
+                            -
+                            <a href="./static/eccv2022/accepted_papers/FashionDiffusion.pdf">Diffusion Models for Outfit Rendering </a> |
+                            <a href="https://de.linkedin.com/in/vignesh-srinivasan-phd-95301192">Vignesh Srinivasan (Zalando Research)</a>
+                            <br>
+
+
+                            -
+                            <a href="./static/eccv2022/accepted_papers/ELEVATER_Workshop_Paper.pdf">OmDet </a> |
+                            <a href="https://www.tianchez.com/">Tiancheng Zhao (Binjiang Institute of Zhejiang University)</a>
+                            <br>
+
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=250>
+                            <center> <b>10:30 AM - 11:00 AM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center> 
+                                <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Challenge Summary &nbsp&nbsp
+                                <img src="static/cvpr2024/img/challenge/challenge_summary.png" class=" style=" width="80" height="100" ;>
+                                </h1> 
+                                <b></b>
+                            </center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Challenge Summary
+                            </b> 
+                            <a href="https://blog.roboflow.com/author/jacob/"><br>Jacob Solawetz (Roboflow)</a>: <a href="https://eval.ai/web/challenges/challenge-page/1973/overview"> Roboflow 100 for Object Detection in the Wild</a>
+                            <a href="https://maureenzou.github.io/"><br>Xueyan Zou (UW Madison)</a>: <a href="https://eval.ai/web/challenges/challenge-page/1931/overview"> Segmentation in the Wild (SGinW)</a>
+                            <a href="https://jerryxu.net/"><br>Jiarui Xu (UCSD)</a>: <a href="https://arxiv.org/abs/2303.04803"> Open-Vocabulary Panoptic Segmentation with Text-to-Image Diffusion Models (ODISE)</a>
+                            <a href="https://scholar.google.com/citations?hl=zh-CN&user=p9EoCKAAAAAJ&view_op=list_works&sortby=pubdate"><br>Jiannan Wu (HKU)</a>: <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yan_Universal_Instance_Perception_As_Object_Discovery_and_Retrieval_CVPR_2024_paper.pdf"> Universal instance perception as object discovery and retrieval (UNINEXT)</a>
+                            <br>
+
+           
+                            <br>
+                                - ICinW Industry Track | 
+                            <a href="https://github.com/OFA-Sys/OFA">Chinese CLIP </a> |
+                            <a href="https://justinlin610.github.io/">Junyang Lin (Alibaba)</a>
+                            <br>
+                            
+                                - ICinW Academic Track | 
+                            <a href="https://arxiv.org/abs/2204.09222">K-LITE </a> |
+                            <a href="https://sincerass.github.io/">Sheng Shen (University of California, Berkeley)</a>
+                            <br>
+
+                                - ICinW ImageNet-1K in Pre-training | 
+                            <a href="https://opengvlab.shlab.org.cn/bamboo/home">Bamboo </a> |
+                            <a href="https://zhangyuanhan-ai.github.io/">Yuanhan Zhang (Nanyang Technological University)</a>
+                            <br>
+
+                                - ICinW Parameter-Efficiency | 
+                            <a href="https://arxiv.org/abs/2205.03340">ProDA </a> |
+                            <a href="hhttps://github.com/lynlynlyn">Yuning Lu (University of Science and Technology of China)</a>
+                            <br>
+
+                                - ODinW Zero-Shot Track | 
+                            <a href="https://arxiv.org/abs/2209.09407">DetCLIP </a> |
+                            <a href="https://scholar.google.com/citations?user=OEPMQEMAAAAJ&hl=en">Jianhua Han (Huawei)</a>
+                            <br>
+
+                                - ODinW Full-Shot Track | 
+                            <a href="https://arxiv.org/abs/2203.03605">DINO </a> |
+                            <a href="https://www.lsl.zone/">Shilong Liu (IDEA & Tsinghua)</a>,
+                            <a href="https://scholar.google.com/citations?user=B8hPxMQAAAAJ&hl=zh-CN">Hao Zhang (IDEA & HKUST)</a>
+                         
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=250>
+                            <center> <b>11:00 AM - 11:30 AM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="https://jiasenlu.github.io/images/profile.jpeg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <a href="https://jiasenlu.github.io/"><br>Jiasen Lu - Allen Institute for AI</a>
+                            <br>
+                            <b>Title: Adaptation or training from scratch? Some preliminary thoughts and experiments towards Multimodal LLMs</b>
+                            <br>
+                            <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                Jiasen Lu is a Research Scientist at Allen Institute for AI. He obtained his Ph.D. at Georgia Tech, advised by Prof. Devi Parikh. His research is in computer vision, focusing on the intersection between vision and language, and embodiments. He has published at major computer vision (CVPR, ICCV, ECCV), machine learning (NeurIPS, ICLR), and robotics (CORL) conferences and is a co-organizer of the first and second VQA workshops at CVPR.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center>  <b>11:30 AM - 12:00 PM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="https://www.cs.cmu.edu/~katef/images/stairs.png"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <a href="https://www.cs.cmu.edu/~katef/"><br>Katerina Fragkiadaki - Carnegie Mellon University</a> 
+                            <br>
+                            <b>Title: Open-world 2D and 3D detection, tracking and test-time-adaptation with foundational  models</b>
+                            <br>
+                            <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                We will first discuss architectures for image and 3D point cloud object open-world detection and referential grounding. Next, we will discuss a general purpose open-world multi-object tracker and  segmenter, by re-building previous successful tracking-by-detection methods using a combination of neural modules modern from large scale pretrained discriminative models. Last, we will discuss test time finetuning of large scale pretrained image classifiers using feedback from large scale pretrained generative models. The classifier's  parameters are updated at test time to maximize the image  likelihood  under an image diffusion model that conditions on the inferred classifier label. 
+                            </div>                            
+                            <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                Katerina Fragkiadaki is an Assistant Professor in the Machine Learning Department in Carnegie Mellon University. She received her undergraduate diploma from Electrical and Computer Engineering in the National Technical University of Athens. She received her Ph.D. from University of Pennsylvania and was a postdoctoral fellow in UC Berkeley and Google research after that.  Her work focuses on combining forms of common sense reasoning, such as spatial understanding and 3D scene understanding, with deep visuomotor learning.  The goal of her work is to enable few-shot learning and continual learning for perception, action and language grounding.  Her  group develops methods for computer vision for mobile agents, 2D and 3D visual parsing, 2D-to-3D perception,  vision-language grounding,  learning of object dynamics, navigation and manipulation policies. Pioneering innovations of her group’s research include 2D-to-3D geometry-aware neural networks for 3D understanding from 2D video streams,   analogy-forming networks for memory-augmented few-shot visual parsing, and language-grounding in 2D and 3D scenes with bottom-up and top-down attention.  Her work has been awarded with a best Ph.D. thesis award,  an NSF CAREER award, AFOSR Young Investigator award, a DARPA Young Investigator award, Google, TRI, Amazon, UPMC and Sony faculty research awards.
+                            </div>
+                        </td>
+                    </tr>
+                   
+
+
+                    <tr>
+                        <td colspan="3">
+                        <center>
+                        <br>
+                        <em>
+                        Afternoon Session On-Site Chair: <a href="https://chunyuan.li/"> Chunyuan Li (Microsoft) </a> || Online Coordinator: <a href="https://haotian-zhang.github.io/"> Haotian Zhang (Apple) 
+                        </em>
+                        <br><br>
+                        </center>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td width=250>
+                            <center> <b>1:30 PM - 2 PM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="./static/cvpr2024/img/speakers/grauman.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <a href="https://www.cs.utexas.edu/users/grauman/"><br>Kristen Grauman</a>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>2 PM - 2:30 PM PT</b></center> 
+                        </td>
+
+
+                        <td width=300>
+                            <center><img src="./static/eccv2022/img/ziwei_liu.png"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <a href="https://liuziwei7.github.io/"><br>Ziwei Liu - Nanyang Technological University</a>
+                            <br>
+                            <b>Title: Towards Building a Practical AI Assistant</b>
+                            <br>
+                            <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                The development of practical AI assistants holds tremendous potential for enhancing human-computer interaction by enabling intelligent systems to perceive and understand the visual world. This presentation focuses on the progress made and challenges faced in building such assistants that seamlessly integrate computer vision, natural language processing, and cognitive capabilities. We will delve into our recent research advancements in three key areas: (1) Structured understanding of the world starting from scene relationships, (2) Transition from language models to language assistants, and (3) Transition from multimodal models to multimodal assistants. Through detailed explanations and insights, we aim to shed light on the latest developments in these areas. In conclusion, this talk highlights the exciting advancements in building practical AI assistants that can effectively interpret and interact with the visual world.
+                            </div>                            
+                            <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                Prof. Ziwei Liu is currently a Nanyang Assistant Professor at Nanyang Technological University, Singapore. His research revolves around computer vision, machine learning and computer graphics. He has published extensively on top-tier conferences and journals in relevant fields, including CVPR, ICCV, ECCV, NeurIPS, ICLR, SIGGRAPH, TPAMI, TOG and Nature - Machine Intelligence. He is the recipient of Microsoft Young Fellowship, Hong Kong PhD Fellowship, ICCV Young Researcher Award, HKSTP Best Paper Award and WAIC Yunfan Award. He serves as an Area Chair of CVPR, ICCV, NeurIPS and ICLR, as well as an Associate Editor of IJCV.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width=250>
+                            <center> <b>2:30 PM - 3:30 PM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center> 
+                                <h1 style="font-size:16px; color:#ffa200; font-weight: 500">Poster Session (Afternoon Break) 
+                                <img src="./static/eccv2022/img/icons/coffee_time.png" class=" style=" width="80" height="100" ;>
+                                </h1> 
+                                <b></b>
+                            </center>
+                        </td>
+                        <td style="padding-left:8px">
+                            Poster boards: #135-#142, WEST exhall A
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>3:30 PM - 4:00 PM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="./static/eccv2022/img/yinfei_yang.jpeg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <a href="https://sites.google.com/site/yinfeiyang"><br>Yinfei Yang - Apple AI/ML</a>
+                            <br>
+                            <b>Title: Image Representation Learning with Grounded Text</b>
+                            <br>
+                            <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                The community widely adopts the approach of learning image representations from noisy text supervision. In this study, we introduce a novel method called STAIR, which leverages noisy text supervision to generate a sparse image representation. Our model encodes both image and text inputs into sparse embeddings within a token space, employing a multi-stage training strategy to ensure meaningful token representations. By comparing STAIR with the CLIP model, we demonstrate that STAIR achieves significantly better performance on image-text retrieval tasks. Through quantitative and qualitative analysis, we illustrate that our sparse embedding is more interpretable for humans compared to dense embeddings. Additionally, we propose another method that involves extracting entity information from the noisy text. We utilize this extracted information as labels for the associated images, creating a new dataset with noisy entity annotations. By training a multi-task model on this dataset, we achieve superior performance on image retrieval benchmarks. Moreover, this model exhibits compatibility with image zero-shot learning and linear probing classification benchmarks. The resulting model is named MOFI, which stands for Manifold OF Images.
+                            </div>                            
+                            <b>Bio</b> <a class="abstract-toggle">[Expand]</a>
+                            <div class="abstract-content">
+                                Yinfei Yang is a research scientist manager at Apple AI/ML working on general vision and language intelligence. Previously he was a staff research scientist at Google research working on various NLP and Computer Vision problems. Before Google, He worked at Redfin and Amazon as research engineers for machine learning and computer vision problems. Prior to that,  He was a graduate student in computer science at UPenn. He received his master’s in computer science. His research focuses on image and text representation learning for retrieval and transferring tasks. He is generally interested in problems in Computer Vision, Natural Language Processing, or combined.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>4:00 PM - 4:30 PM PT</b></center> 
+                        </td>
+                        <td width=300>
+                            <center><img src="https://web.eecs.umich.edu/~justincj/images/me-v2.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <a href="https://web.eecs.umich.edu/~justincj/"><br>Justin Johnson</a>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                        <center>
+                        <br>
+                        <em>
+                        Panel On-Site Chair: <a href="https://jwyang.github.io/"> Janwei Yang (Microsoft) </a> || Online Coordinator: <a href="https://haotian-zhang.github.io/"> Haotian Zhang (Apple) 
+                        </em>
+                        <br><br>
+                        </center>
+                        </td>
+                    </tr>                         
+                    <tr>
+                        <td width=250>
+                            <center> <b>4:30 PM - 5:30 PM PT</b></center> 
+                        </td>
+                        <td width=350>
+                            <center><img src="./static/cvpr2024/img/speakers/boqing_gong.jpg"><img src="https://bryanplummer.com/profile.jpg"><img src="https://www.cs.cmu.edu/~katef/images/stairs.png"><img src="./static/cvpr2024/img/speakers/dhruv_batra.jpg"><img src="./static/cvpr2024/img/speakers/jacob.jpeg"><img src="./static/cvpr2024/img/speakers/leizhang_square.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Panel Discussion</b>
+                            <a href="http://boqinggong.info/"><br>Boqing Gong</a>,
+                            <a href="https://bryanplummer.com/"><br>Bryan A. Plummer</a>,
+                            <a href="https://www.cs.cmu.edu/~katef/"><br>Katerina Fragkiadaki</a>,
+                            <a href="https://faculty.cc.gatech.edu/~dbatra/"><br>Dhruv Batra</a>,
+                            <a href="https://blog.roboflow.com/author/jacob/"><br>Jacob Solawetz</a>, 
+                            <a href="https://www.leizhang.org/"><br>Lei Zhang</a>
+
+                        </td>
+                    </tr>
+
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center>
+                                <img src="./static/invited/challenge_2021_winners/MingYan.png">
+                                <img src="./static/invited/challenge_2021_winners/HaiyangXu.png">
+                                <img src="./static/invited/challenge_2021_winners/ChenliangLi.png">
+                                <img src="./static/invited/challenge_2021_winners/JunfengTian.png">
+                                <br>
+                                <img src="./static/invited/challenge_2021_winners/WeiWang.png">
+                                <img src="./static/invited/challenge_2021_winners/BinBi.png">
+                                <img src="./static/invited/challenge_2021_winners/ZhengCao.png">
+                                <img src="./static/invited/challenge_2021_winners/JiZhang.png">
+                                <br>
+                                <img src="./static/invited/challenge_2021_winners/SongfangHuang.png">
+                                <img src="./static/invited/challenge_2021_winners/FeiHuang.png">
+                                <img src="./static/invited/challenge_2021_winners/LuoSi.png">
+                                <br>
+                                <img src="./static/invited/challenge_2021_winners/damo.png" style="border-radius: 0%;">
+                            </center>
+                        </td>
+                        <td style="padding-left:8px"><b>VQA Challenge Winner Talk</b>
+                            <br>Team: AliceMind
+                            <br>Members:  Ming Yan, Haiyang Xu, Chenliang Li , Junfeng Tian, Wei Wang, Bin Bi, Zheng Cao, Ji Zhang, Songfang Huang, Fei Huang, Luo Si
+                            <br>Affiliation: Alibaba Group
+                            <br>
+                            <a target="_blank" href="https://youtu.be/iRG29Cq4CDE">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1KjVjz9cG0KFbEzQwckyDXwrh_63-dbBn/view?usp=sharing">[Slides]</a>
+                            <br><br>
+                            Poster ID: 13
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/img/yashkant.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px"><b>TextVQA Challenge Talk (Overview, Analysis and Winner Announcement)</b>
+                            <br>Yash Kant (Georgia Tech)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/0vdMWMStxOA">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1CGksfKjJnbsnDV6UnGYaT4_4k1PF-UgK/view?usp=sharing">[Slides]</a>
+                            <br><br>
+                            Poster ID: 14
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+
+                        </td>
+                    <td style="padding-left:8px"><b>TextVQA Challenge Winner</b>
+                        <br>Members: Yixuan Qiao, Hao Chen, Jun Wang, Xianbin Ye, Ziliang Li, Peng Gao, Guotong Xie
+                        <br>
+                        <a target="_blank" href="https://drive.google.com/file/d/1TWGJg7q7DJO_wb8dw2KS__pm4lhh7UHn/view">[Paper]</a>
+                        <br><br>
+                        Poster ID: 15
+                    </td>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center>
+                                <img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;">
+                                <img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;">
+                                <img src="./static/invited/poster.png" style="width: 80px; height: 80px; border-radius: 0%;">
+                            </center>
+                        </td>
+                        <td style="padding-left:8px"><b>Poster Spotlights</b>
+                            <br>
+                            To watch the poster spotlights, visit: <a href="posters_2021.html">https://visualqa.org/posters_2021</a>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/invited/speakers_2020/aman.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px"><b>TextCaps Challenge Talk (Overview, Analysis and Winner Announcement)</b>
+                            <br>Amanpreet Singh (Facebook AI Research)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/oaPgdb7h4-0">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1-llSbeHg3H03e6eHXcRq9urm7nAIDMUG/view?usp=sharing">[Slides]</a>
+                            <br><br>
+                            Poster ID: 16
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center>
+                                <img src="./static/invited/challenge_2021_winners/Picture1.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture2.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture3.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture4.png">
+                                <br>
+                                <img src="./static/invited/challenge_2021_winners/Picture5.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture6.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture7.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture8.png">
+                                <br>
+                                <img src="./static/invited/challenge_2021_winners/Picture9.png">
+                                <img src="./static/invited/challenge_2021_winners/Picture10.png">
+                                <br>
+                                <img src="./static/invited/challenge_2021_winners/Picture11.png" style="border-radius: 0%;">
+                                <img src="./static/invited/challenge_2021_winners/Picture12.png" style="border-radius: 0%;">
+                            </center>
+                        </td>
+                        <td style="padding-left:8px"><b>TextCaps Challenge Winner Talk</b>
+                            <br>Members: Zhengyuan Yang, Jianfeng Wang, Xiaowei Hu, Zhe Gan, Lijuan Wang, Yijuan Lu, Dinei Florencio, Cha Zhang, Jiebo Luo, Zicheng Liu
+                            <br>Affiliations: Microsoft, University of Rochester
+                            <br>
+                            <a target="_blank" href="https://youtu.be/IzqS3TUyPh4">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1lqIkw0QpNjbQkT_AikcnLZPUSMGLEpsZ/view?usp=sharing">[Slides]</a>
+                            <br><br>
+                            Poster ID: 17
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/invited/speakers_2021/aida.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <b>Title: Towards Better Multimodal Pretraining</b>
+                            <br>Aida Nematzadeh (DeepMind)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/06fSUQw_RCQ">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1gG8k_DFtunpDPY4YF0aCCFs3DM5ktc4M/view?usp=sharing">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/invited/speakers_2021/justin.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <b>Title: Learning Visual Representations from Language</b>
+                            <br>Justin Johnson (University of Michigan)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/swg0wCRBUJE">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1IsR1CH2iK152L9fCvkXAX6a7icKtBXcN/view?usp=sharing">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/invited/speakers_2021/damien.png"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <b>Title: Visual question answering and the limits of statistical learning. Are we building a ladder to the moon?</b>
+                            <br>Damien Teney (Idiap Research Institute)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/ggWmvWsE1l0">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1qEuN8nFSYdaorG-tujonMqpjQCG59Oro/view?usp=sharing">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/invited/speakers_2021/mohit.png"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <b>Title: Knowledgeable & Spatial-Temporal Vision+Language</b>
+                            <br>Mohit Bansal (UNC Chapel Hill)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/ckWMwRCNsB4">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1JX6NF05DbALR35Ovl2bcc9D-RKglVLKo/view?usp=sharing">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=250>
+                            <center> <b>9 AM - 9:15 AM IDT</b> <br><br>(11 PM - 11:15 PM PT)</center> 
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/invited/speakers_2021/katerina.png"></center>
+                        </td>
+                        <td style="padding-left:8px">
+                            <b>Invited Talk</b>
+                            <br>
+                            <b>Title: Augment Machine Intelligence with Multimodal Information</b>
+                            <br>Katerina Fragkiadaki (Carnegie Mellon University)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/uZgU7aOl6ks">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1KuqUU_-Y43TZXfBs318MuMqRjMV_Coap/view?usp=sharing">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=150>
+                            <center> </center>
+                        </td>
+                        <td width=500>
+                            <center><img src="./static/img/aishwarya.jpg"></center>
+                        </td>
+                        <td style="padding-left:8px"><b>Closing Remarks</b>
+                            <br>Aishwarya Agrawal (University of Montreal / Mila / Deepmind)
+                            <br>
+                            <a target="_blank" href="https://youtu.be/wjCjG_kkIU4">[Video]</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1sLZyDsEuFa23D8Z-qCq7JLG_USMMR2es/view?usp=sharing">[Slides]</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+-->
+    
+
+    <!-- <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Accepted Papers</h1>
+        <div class="large-12 columns" style="text-align:left;">
+            <p style="font-size:15px; font-weight: 400; text-align:left">
+                <ul style="font-size:15px;">
+                    The following papers were accepted to the CV in the Wild Workshop (Poster boards: #135-#142):
+                    <br>
+                    <br>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/5/CameraReady/cvinw_camera_ready.pdf>SITA: Single Image Test-time Adaptation</a></b> Ansh Khurana (Stanford University)*; Sujoy Paul (Google Research); Piyush Rai (IIT Kanpur); Soma Biswas (Indian Institute of Science, Bangalore); Gaurav Aggarwal (Google)</li> 
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/6/CameraReady/camera_ready.pdf>Perceptual Grouping in Contrastive Vision-Language Models</a></b> Kanchana N Ranasinghe (Stony Brook University)*; Brandon S McKinzie (Apple); Sachin Ravi (Princeton University); Yinfei Yang (Apple); Alexander Toshev (Apple); Jonathon Shlens (Google)</li>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/7/CameraReady/vipergpt4page_cameraready.pdf>ViperGPT: Visual Inference via Python Execution for Reasoning</a></b> Dídac Surís (Columbia University); Sachit Menon (Columbia University)*; Carl Vondrick (Columbia University)</li>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/8/CameraReady/2024139829.pdf>From Coarse to Fine-grained Concept based Discrimination for Phrase Detection</a></b> Maan Qraitem (Boston University)*; Bryan Plummer (Boston University)</li>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/10/CameraReady/11_camera_ready.pdf>A Robust Likelihood Model for Novelty Detection</a></b> Ranya Almohsen (West Virginia University )*; Shivang A Patel (West Virginia University); Donald adjeroh (West Virginia University); Gianfranco Doretto (West Virginia University)</li>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/12/CameraReady/CVinW_ESS_ID12.pdf>ESS: Learning Event-based Semantic Segmentation from Still Images</a></b> Zhaoning Sun (ETH Zürich); Nico Messikommer (University of Zurich & ETH Zurich)*; Daniel Gehrig (University of Zurich & ETH Zurich); Davide Scaramuzza (University of Zurich & ETH Zurich, Switzerland)</li>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/13/CameraReady/CVinW__23.pdf>FixPNet: Attention Guided Fixation Map Prediction With Explicit Image Priors</a></b> Rakesh Radarapu (Samsung R & D)*; Sudha Velusamy (Samsung India); Anandavardhan Hegde (Samsung R & D); Narayan Kothari (Samsung R&D Institute, Bangalore, India)</li>
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/14/CameraReady/14.pdf>MAtch, eXpand and Improve: Unsupervised Finetuning for Zero-Shot Action Recognition with Language Knowledge</a></b> Wei Lin (Graz University of Technology)*; Leonid Karlinsky (IBM-Research); Nina Shvetsova (Goethe University Frankfurt); Horst Possegger (Graz University of Technology); Mateusz Kozinski (ICG TUGRAZ); Rameswar Panda (MIT-IBM Watson AI Lab); Rogerio Feris (MIT-IBM Watson AI Lab, IBM Research); Hilde Kuehne (Goethe University Frankfurt); Horst Bischof (Graz University of Technology)                    </li>                  
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/16/CameraReady/ImbaGCD_CVPR_Workshop.pdf>ImbaGCD: Imbalanced Generalized Category Discovery</a></b> Ziyun Li (Hasso Plattner Institute)*; Ben Dai (The Chinese University of Hong Kong); Furkan F Simsek (Hasso Plattner Institute); Meinel Christoph (Hasso Plattner Institute, Potsdam Germany); Haojin Yang (Hasso-Plattner-Institut für Digital Engineering gGmbH)                    </li> 
+                    <li style="margin-left:30px"> <b><a href=./static/cvpr2024/accepted_papers/18/CameraReady/CVinW2024_FoodSeg_CR.pdf>Transferring Knowledge for Food Image Segmentation using Transformers and Convolutions</a></b> Grant Sinha (University of Waterloo)*; Krish Parmar (University of Waterloo); Hilda Azimi (NRC); Chi-en A Tai (University of Waterloo); Yuhao Chen (University of Waterloo); Alexander Wong (University of Waterloo); PENGCHENG XI (National Research Council Canada)                    </li> 
+                    
+    
+                    <br>
+
+    
+
+                    </div>
+    
+                </ul>    
+
+            </p>
+        </div>
+    </div>  -->
+
+
+
+
+<div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Call for Papers</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">
+                    Topics of interest include but are not limited to:
+                    <ul style="font-size:15px;">
+                        <li style="margin-left:30px">
+                            LMMs: collection/curation/creation of pre-trainig and instruction-following data, alignment with human intents and modeling.
+                        </li>   
+                        <li style="margin-left:30px">
+                            New metrics / benchmarks / datasets to evaluate LMM, task-level transfer and open-set visual recognition
+                        </li>  
+                        <li style="margin-left:30px">
+                            Unified neural networks architectures and training objectives over different CV & MM tasks
+                        </li>
+                        <li style="margin-left:30px">
+                            Tool use, external knoweldge and multimodal agents
+                        </li>
+                        <li style="margin-left:30px">
+                            Open-set visual recognition methods, including classification, object detection, segmentation in images and videos
+                        </li>
+                        <li style="margin-left:30px">
+                            Efficient large visual model adaptation methods, measured by #training samples (zero-shot and few-shot), #trainable parameters, throughput, training cost
+                        </li>       
+                        <li style="margin-left:30px">
+                            Efficien prompting, inference and serving techniques at scale.
+                        </li>            
+          
+        
+                        <br>
+                        We accept abstract submissions to our workshop. All submissions shall have maximally 8 pages (excluding references) following the CVPR 2024 author guidelines. All submissions will be reviewed by the Program Committee on the basis of technical quality, relevance to scope of the conference, originality, significance, and clarity. Ther review process is double-blind, and the accepted papers are NOT archived in CVPR proceeding.
+                        <br> <br>
+        
+                        <div class="large-12 columns" style="text-align:left;">
+                            <p style="font-size:15px; font-weight: 200; border-style: solid;
+                                          border-width: 1px; text-align:justify; padding:5px; width:85%">
+                                <code>
+        
+                                    <span style="display:inline-block; margin-left:5px;">
+                                        <a href="https://cmt3.research.microsoft.com/CVinW2024"> <img src="./static/eccv2022/img/icons/icon_live.png" class=" style=" width="45" height="40" ;> </a>
+                                    </span>
+                                    <span style="width:85%; margin:5px; display:inline-block;">
+                                        Workshop Paper Submission Portal: 
+                        <a href="https://cmt3.research.microsoft.com/CVinW2024"> [CMT] </a></span>
+                                    <span style="display:inline-block; margin-left:10px;"></span><br>
+                                </code>
+                            
+                        </p>
+                        </div>
+                    </div>
+                    <hr> 
+</div>
+
+
+
+<!-- <div class="row">
+            <h1 style="font-size:30px; color:grey; font-weight: 200">Computer Vision in the Wild Challenges</h1>
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 400; text-align:left">          
+        
+        The two new challenges are developed:
+
+                <table width="85%">
+                <tr>
+                    <td width=30>
+                        <center> <span style="color:gray;"><b>Challenge</b></span> <br>
+                    </td>
+                    <td width=100>
+                        <center> <span style="color:gray;"><b>Eval Datasets</b></span> <br>
+                    </td>
+                    <td width=100>
+                        <center> <span style="color:gray;"><b>Eval Metrics</b></span> <br>
+                    </td>
+                    <td width=100>
+                        <center> <span style="color:gray;"><b>Instructions</b></span> <br>
+                    </td>                            
+                    <td width=170>
+                        <center> <span style="color:black;"><b>Make a Challenge Submission</b>
+                            <img src="./static/eccv2022/img/icons/icon_live.png" class=" style=" width="50" height="40" ;>
+                        </span> <br>
+                    </td>                            
+
+                </tr>
+                <tr>
+                    <td width=30>
+                        <center> <span><b>SGinW</b></span></center>
+                    </td>
+                    <td width=150>
+                        <center> <span><b>25 Image Segmentation Datasets</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><b>Zero, few, full-shot</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><a href="https://github.com/microsoft/X-Decoder/tree/seginw"> <img src="./static/eccv2022/img/icons/instruction.png" class="style=" width="50" height="50" ;> </a></span></center>
+                    </td>     
+                    <td width=170>
+                        <center> <span><a href="https://eval.ai/web/challenges/challenge-page/1931/overview"> <img src="https://evalai.s3.amazonaws.com/media/logos/0b7a5a6d-cc4c-42d1-a155-c829ea036d51.jpg" class="home_team_picture style=" width="100" height="100" ;> </a></span></center>
+                    </td>                                                        
+                </tr>
+                <tr>
+                    <td width=30>
+                        <center> <span><b>RF100</b></span></center>
+                    </td>
+                    <td width=150>
+                        <center> <span><b>100 Object Detection Datasets</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><b>Zero, few, full-shot</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><a href="https://www.rf100.org/"> <img src="./static/eccv2022/img/icons/instruction.png" class=" style=" width="50" height="50" ;> </a></span></center>
+                    </td>  
+                    <td width=170>
+                        <center> <span><a href="https://eval.ai/web/challenges/challenge-page/1973/overview"> <img src="https://evalai.s3.amazonaws.com/media/logos/678927bd-a0f9-44f6-b292-d3af66bf6e58.png" class="home_team_picture style=" width="100" height="100" ;> </a></span></center>
+                    </td>  
+                </tr>
+                </tr>
+            </table>                                 
+                    
+                    
+        <ul style="font-size:15px;"> 
+        The two existing challenges associated with this workshop: "Image Classification in the Wild" (ICinW) and "Object Detection in the Wild" (ODinW). We summarize their evaluation datasets and metrics in the table below.<br><br>
+            <table width="85%">
+                <tr>
+                    <td width=30>
+                        <center> <span style="color:gray;"><b>Challenge</b></span> <br>\
+                    </td>
+                    <td width=100>
+                        <center> <span style="color:gray;"><b>Eval Datasets</b></span> <br>
+                    </td>
+                    <td width=100>
+                        <center> <span style="color:gray;"><b>Eval Metrics</b></span> <br>
+                    </td>
+                    <td width=100>
+                        <center> <span style="color:gray;"><b>Instructions</b></span> <br>
+                    </td>                            
+                    <td width=170>
+                        <center> <span style="color:black;"><b>Make a Challenge Submission</b>
+                            <img src="./static/eccv2022/img/icons/icon_live.png" class=" style=" width="50" height="40" ;>
+                        </span> <br>
+                    </td>                            
+
+                </tr>
+                <tr>
+                    <td width=30>
+                        <center> <span><b>ICinW</b></span></center>
+                    </td>
+                    <td width=150>
+                        <center> <span><b>20 Image Classification Datasets</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><b>Zero, few, full-shot</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><a href="https://github.com/Computer-Vision-in-the-Wild/Elevater_Toolkit_IC"> <img src="./static/eccv2022/img/icons/instruction.png" class="style=" width="50" height="50" ;> </a></span></center>
+                    </td>     
+                    <td width=170>
+                        <center> <span><a href="https://eval.ai/web/challenges/challenge-page/1832/overview"> <img src="https://evalai.s3.amazonaws.com/media/logos/0edb5d9a-27cc-42d0-b548-8d8a5d268c5b.jpg" class="home_team_picture style=" width="100" height="100" ;> </a></span></center>
+                    </td>                                                        
+                </tr>
+                <tr>
+                    <td width=30>
+                        <center> <span><b>ODinW</b></span></center>
+                    </td>
+                    <td width=150>
+                        <center> <span><b>35 Object Detection Datasets</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><b>Zero, few, full-shot</b></span></center>
+                    </td>
+                    <td width=100>
+                        <center> <span><a href="https://github.com/microsoft/GLIP#the-object-detection-in-the-wild-benchmark"> <img src="./static/eccv2022/img/icons/instruction.png" class=" style=" width="50" height="50" ;> </a></span></center>
+                    </td>  
+                    <td width=170>
+                        <center> <span><a href="https://eval.ai/web/challenges/challenge-page/1839/overview"> <img src="https://evalai.s3.amazonaws.com/media/logos/b8a06ae4-2172-43ae-b65f-64c6139d807c.jpg" class="home_team_picture style=" width="100" height="100" ;> </a></span></center>
+                    </td>  
+                </tr>
+
+                </tr>
+            </table>
+            
+            
+            To prevent a race purely in pre-training data and model size, we will have two tracks.
+            
+            
+            <li style="margin-left:30px">
+                
+                For the academic track, pre-training data is limited: 
+                    (1) ICinW: 
+                <a href="https://www.image-net.org/">ImageNet21K (Removing ImageNet1K)</a>, 
+                <a href="https://github.com/google-research-datasets/conceptual-captions">CC3M</a>+<a href="https://www.objects365.org/overview.html">CC12M</a>, <a href="https://github.com/openai/CLIP/blob/main/data/yfcc100m.md">YFCC15M</a>; 
+                    (2) ODinW: <a href="https://www.objects365.org/overview.html">Objects365</a>; 
+                    (3) SGinW: <a href="https://cocodataset.org/">COCO</a>, <a href="https://github.com/mjhucla/Google_Refexp_toolbox">RefCOCO-g</a>.
+
+
+                
+            </li>
+
+            <li style="margin-left:30px">
+                For the industry track, there is no limitation on pre-training data and model size. Teams are required to disclose meta info of model and data if extra data is used. Here are some publicly available image-text datasets: (1) FLAVA <a href="https://huggingface.co/datasets/facebook/pmd">Public Multimodal Datasets (PMD)</a> corpus with 70M pairs; (2) <a href="https://laion.ai/projects/">LAION</a> with 400M or 5B pairs.
+
+
+            </li>
+
+            <br>
+            Please see the submission pages for detailed requirements in each Challenge -> Track -> Phase. More information about the challenge benchmark is released: 
+            <a href="https://computer-vision-in-the-wild.github.io/ELEVATER/"> [Benchmark] </a>
+            <a href="https://arxiv.org/abs/2204.08790"> [Document]</a>
+                <a href="https://github.com/Computer-Vision-in-the-Wild/DataDownload"> [Data Download]</a>.
+            Please reach out if you have any issue in submissions.
+            <br><br>
+
+            
+        </p>
+    </div>
+    <hr> 
+</div> -->
+
+
+
+    <div class="row">
+        <h1 style="font-size:30px; color:grey; font-weight: 200">Dates</h1>
+        <div class="large-12 columns" style="text-align:left;">
+            <div class="large-12 columns" style="text-align:left;">
+                <p style="font-size:15px; font-weight: 200; border-style: solid;
+                                border-width: 1px; text-align:justify; padding:5px; width:85%">
+                    <code>
+                            <span style="width:40%; margin:5px; display:inline-block;">Feb, 2024</span>
+                            <span style="display:inline-block; margin-left:10px;">Competition starts, testing phase begins</span><br>
+    
+                            <span style="width:40%; margin:5px; display:inline-block;">
+                                June 2nd, 2024
+                            </span>
+                            <span style="display:inline-block; margin-left:10px;">Competition ends (challenge paper submission)</span><br>
+    
+                            <span style="width:40%; margin:5px; display:inline-block;">
+                            April 28st, 2024
+    <!--                                         <a href="https://cmt3.research.microsoft.com/CVinW2024"> <img src="./static/eccv2022/img/icons/icon_news.png" class=" style=" width="40" height="40" ;> </a> -->
+                        </span>
+                            <span style="display:inline-block; margin-left:10px;">Workshop paper submission deadline</span><br>
+    
+                            <span style="width:40%; margin:5px; display:inline-block;">May 19th, 2024</span>
+                            <span style="display:inline-block; margin-left:10px;">Workshop paper acceptance decision to authors</span><br>
+    
+    
+                            <span style="width:40%; margin:5px; display:inline-block;">June 2nd, 2024</span>
+                            <span style="display:inline-block; margin-left:10px;">Camera-ready submission deadline</span><br>
+    
+                        </code></p>
+            </div>
+        </div>
+        <hr>
+    </div>
+        
+
+<div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Workshop Organizers</h1>
+    <div class="team" id="people" align=center>
+        <div class="row">
+
+
+            <div class="large-1 columns">
+                <a href="https://chunyuan.li/"><img src="https://vlp-tutorial.github.io/2022/img/organizer/chunyuan.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Chunyuan Li
+                    <br>ByteDance / TikTok</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://jwyang.github.io"><img src="https://jwyang.github.io/images/profile.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jianwei Yang
+                    <br>Microsoft</p>
+                </div>
+
+
+
+                
+            <div class="large-1 columns">
+                <a href="https://hliu.cc/"><img src="./static/eccv2022/img/haotian-circle.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Haotian Liu
+                    <br>UW Madison</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://maureenzou.github.io/"><img src="./static/cvpr2023/img/organizers/xueyan.jfif" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Xueyan Zou
+                    <br>UW Madison
+                </p>
+            </div>
+
+
+            <div class="large-1 columns">
+                <a href="https://wanrong-zhu.com/"><img src="https://wanrong-zhu.com/author/wanrong-zhu/avatar_huac9fc6b92b4eff9f49f0fa2aadd3d764_1202942_270x270_fill_q90_lanczos_center.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Wanrong Zhu 
+                    <br>UCSB</p>
+            </div>             
+
+
+            <div class="large-1 columns">
+                <a href="https://yonatanbitton.github.io/"><img src="https://yonatanbitton.github.io/authors/admin/avatar_hub6a82f0e24dfc8eb87466fed56bca441_709630_270x270_fill_q75_lanczos_center.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yonatan Bitton
+                    <br>Google</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><img src="https://www.microsoft.com/en-us/research/uploads/prod/2020/09/20191101_170350330_iOS-4.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jianfeng Gao
+                    <br>Microsoft</p>
+            </div> 
+
+<!--             
+            <div class="large-1 columns">
+                <a href="http://jyotianeja.com/"><img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FYB92lkAAAAJ&citpid=1" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jyoti Aneja
+                    <br>Microsoft</p>
+            </div>
+
+
+            <div class="large-1 columns">
+                    <a href="https://xinw.ai/"><img src="https://xinw.ai/assets/images/photo.JPG" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Xin Wang
+                        <br>Microsoft</p>
+            </div>
+  
+            <div class="large-1 columns">
+                <a href="https://liunian-harold-li.github.io/"><img src="https://liunian-harold-li.github.io/img/harold_cropped.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Liunian Li
+                    <br>UCLA</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://pzzhang.github.io/pzzhang/"><img src="./static/eccv2022/img/pengchuan-circle.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Pengchuan Zhang
+                    <br>Meta AI</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://ashkamath.github.io/"><img src="./static/eccv2022/img/aishwarya_k.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Aishwarya Kamath
+                    <br>NYU</p>
+            </div>  -->
+        <!-- </div> -->
+    <hr>
+</div>
+</div>
+
+
+
+<!-- <div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Challenge Organizers and Participants</h1>
+    <div class="team" id="people" align=center>
+        <div class="row">
+
+
+
+             <div class="large-1 columns">
+                <a href="https://github.com/FrancescoSaverioZuppichini"><img src="./static/cvpr2024/img/organizers/Francesco.png" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Francesco Zuppichini
+                    <br>Roboflow
+                </p>
+            </div> 
+
+
+            <div class="large-1 columns">
+                <a href="https://fengli-ust.github.io/"><img src="./static/cvpr2024/img/organizers/Feng_Li.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Feng Li
+                    <br>HKUST
+                </p>
+            </div>
+            
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=B8hPxMQAAAAJ&hl=en"><img src="./static/cvpr2024/img/organizers/Hao_Zhang.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Hao Zhang
+                    <br>HKUST
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://rentainhe.github.io/"><img src="./static/cvpr2024/img/organizers/tianhe.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Tianhe Ren
+                    <br>IDEA
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://www.lsl.zone/"><img src="./static/cvpr2024/img/organizers/Shilong_Liu.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Shilong Liu
+                    <br>Tsinghua University
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://www.lsl.zone/"><img src="./static/cvpr2024/img/organizers/Jiarui_Xu.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jiarui Xu
+                    <br>UCSD
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=p9EoCKAAAAAJ&hl=zh-CN"><img src="./static/cvpr2024/img/organizers/Jiannan_Wu.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jiannan Wu
+                    <br>HKU
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://masterbin-iiau.github.io/"><img src="./static/cvpr2024/img/organizers/Bin_Yan.jpeg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Bin Yan
+                    <br>DUT
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=C04zJHEAAAAJ&hl=en"><img src="./static/cvpr2024/img/organizers/Mengde_Xu.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Mengde Xu
+                    <br>HUST
+                </p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://stupidzz.github.io/"><img src="./static/cvpr2024/img/organizers/Zheng_Zhang.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Zheng Zhang
+                    <br>MSRA
+                </p>
+            </div>
+
+
+
+</div>
+</div> 
+ -->
+
+<!-- Challenge Organizers -->
+
+
+
+<!-- <div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Challenge Organizers</h1>
+    <div class="team" id="people">
+        <div class="row">
+            <div class="large-1 columns">
+                <a href="https://sites.google.com/site/yinfeiyang"><img src="./static/eccv2022/img/yinfei_yang.jpeg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yinfei Yang 
+                    <br>Apple</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/yi-ting-chen-google/ "><img src="./static/eccv2022/img/yiting_chen.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yi-Ting Chen 
+                    <br>Google</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/ye-xia-19b46b42/ "><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=QQhJ1pAAAAAJ&citpid=1" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Ye Xia 
+                    <br>Google</p>
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://openreview.net/profile?id=~Yangguang_Li1 "><img src="./static/eccv2022/img/YangguangLi.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yangguang Li 
+                    <br>Sensetime</p>
+            </div>
+            <div class="large-1 columns">
+                    <a href="https://jeff-liangf.github.io"><img src="./static/eccv2022/img/feng_liang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Feng Liang 
+                        <br>UT Austin</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://slothercui.github.io/ "><img src="./static/eccv2022/img/YufengCui.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yufeng Cui 
+                    <br>Sensetime</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/pingjin1"><img src="./static/eccv2022/img/ping_jin.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Ping Jin
+                    <br>Microsoft</p>
+            </div>   
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/shohei-ono-ab7404a8/"><img src="./static/eccv2022/img/shohei.png" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Shohei Ono 
+                    <br>Microsoft</p>
+            </div> 
+            <div class="large-1 columns">
+                <a href="https://houwenpeng.com/"><img src="https://www.microsoft.com/en-us/research/uploads/prod/2019/07/Houwen_Peng_360x360-5d1ce02ab189f.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Houwen Peng
+                    <br>Microsoft</p>
+            </div> 
+            <div class="large-1 columns">
+                <a href="https://www.sainingxie.com/"><img src="./static/eccv2022/img/saining.png" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Saining Xie
+                        <br>NYU/Meta</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://ancientmooner.github.io/"><img src="./static/eccv2022/img/han_hu.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Han Hu
+                        <br>Microsoft</p>
+            </div>
+            <div class="large-1 columns">
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="large-1 columns">
+                <a href="https://apsdehal.in/"><img src="./static/eccv2022/img/aman.jpeg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Amanpreet Singh
+                    <br>HuggingFace</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com.sg/citations?user=OEZ816YAAAAJ&hl=en"><img src="./static/eccv2022/img/xiaojie_jin.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Xiaojie Jin
+                        <br>Bytedance</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://sites.google.com/site/jshfeng/"><img src="./static/eccv2022/img/jiashi_feng.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Jiashi Feng
+                        <br>Bytedance</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=qp6IwtgAAAAJ&hl=zh-CN"><img src="./static/eccv2022/img/junyang_lin.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Junyang Lin
+                        <br>Alibaba</p>
+                </div>
+              
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=vO9FZekAAAAJ&hl=zh-CN"><img src="./static/eccv2022/img/an_yang.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">An Yang
+                        <br>Alibaba</p>
+                </div>
+
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=7fjqA0YAAAAJ"><img src="./static/eccv2022/img/peng_wang.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Peng Wang
+                        <br>Alibaba</p>
+                </div>
+
+            <div class="large-1 columns">
+                <a href="https://nguyenbh.github.io/"><img src="https://nguyenbh.github.io/authors/admin/avatar_huaf86694975fe5beecb493d38fc677dd1_22672_270x270_fill_q90_lanczos_center.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Nguyen Bach
+                        <br>Microsoft</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://github.com/lynlynlyn"><img src="./static/eccv2022/img/yuning_lu.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Yuning Lu
+                        <br>USTC</p>
+            </div>    
+
+            <div class="large-1 columns">
+                <a href="https://zhangyuanhan-ai.github.io/"><img src="./static/eccv2022/img/yuanhan_zhang.png" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Yuanhan Zhang
+                        <br>NTU</p>
+                </div>            
+
+            <div class="large-1 columns">
+                <a href="https://kaiyangzhou.github.io/"><img src="https://kaiyangzhou.github.io/images/ky.png" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Kaiyang Zhou
+                        <br>NTU</p>
+                </div>
+
+            <div class="large-1 columns">
+                <a href="https://liuziwei7.github.io/"><img src="./static/eccv2022/img/ziwei_liu.png" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Ziwei Liu
+                        <br>NTU</p>
+            </div>
+
+            <div class="large-1 columns">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-1 columns">
+                <a href="https://www.lsl.zone/"><img src="./static/eccv2022/img/shilong_liu.jpeg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Shilong Liu
+                    <br>Tsinghua University</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://fengli-ust.github.io/"><img src="./static/eccv2022/img/feng_li.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Feng Li
+                        <br>HKUST</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=B8hPxMQAAAAJ&hl=zh-CN"><img src="./static/eccv2022/img/hao_zhang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Hao Zhang
+                        <br>HKUST</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/jianfengwang1"><img src="./static/eccv2022/img/jianfeng_wang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Jianfeng Wang
+                        <br>Microsoft</p>                
+            </div>
+              
+            <div class="large-1 columns">
+                <a href="https://www.microsoft.com/en-us/research/people/lijuanw/"><img src="./static/eccv2022/img/lijuan_wang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Lijuan Wang
+                        <br>Microsoft</p>                
+            </div>
+            
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=kDzxOzUAAAAJ&hl=en"><img src="./static/eccv2022/img/xuehai_he.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Xuehai He
+                        <br>UCSC</p>                
+            </div>
+            
+            <div class="large-1 columns">
+                <a href="https://eric-xw.github.io/"><img src="./static/eccv2022/img/xin_wang.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Xin Eric Wang
+                        <br>UCSC</p>                
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://cse.buffalo.edu/~changyou/"><img src="./static/eccv2022/img/changyou_chen.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Changyou Chen
+                        <br>University at Buffalo, SUNY</p>                   
+            </div>
+
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/yeahgoyixu"><img src="./static/eccv2022/img/yi_xu.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Yi Xu
+                        <br>Amazon</p>                   
+            </div>
+            
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=BhysChMAAAAJ&hl=en"><img src="./static/eccv2022/img/haoxuan_you.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                        <br><br>
+                    </a>
+                    <p style="font-size:12px; font-weight: 200;">Haoxuan You
+                        <br>Columbia University</p>                  
+            </div>    
+
+
+            <div class="large-1 columns">
+            </div>            
+
+            <div class="large-1 columns">
+            </div>
+
+            <div class="large-1 columns">
+            </div>
+
+            <div class="large-1 columns">
+            </div>
+        </div>
+
+        </div>  
+
+    </div>      
+
+
+    <hr>    
+</div> -->
+
+
+
+
+<!-- <div class="row">
+    <h1 style="font-size:30px; color:grey; font-weight: 200">Advisory Committee</h1>
+    <div class="team" id="people">
+        <div class="row">
+            <div class="large-1 columns">
+                <a href="https://people.eecs.berkeley.edu/~trevor/"><img src="https://www2.eecs.berkeley.edu/Faculty/Photos/Fullsize/darrell.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Trevor Darrell
+                    <br>UC Berkley</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.leizhang.org/"><img src="./static/eccv2022/img/leizhang-circle.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Lei Zhang
+                    <br>IDEA</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://pages.cs.wisc.edu/~yongjaelee/"><img src="./static/eccv2022/img/lee-circle.jpg"" target="_blank" class="home_team_picture style=" width="75" height="75"  ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yong Jae Lee
+                    <br>UW Madison</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.linkedin.com/in/houdong-hu-08334227"><img src="./static/eccv2022/img/Houdong_profile.png" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Houdong Hu
+                    <br>Microsoft</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.microsoft.com/en-us/research/people/zliu/"><img src="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/03/avatar_user__1490216903-360x360.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Zicheng Liu
+                    <br>Microsoft</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="http://people.csail.mit.edu/celiu/"><img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=j7MW4iYAAAAJ&citpid=8" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Ce Liu
+                    <br>Microsoft</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://www.microsoft.com/en-us/research/people/xdh/"><img src="./static/eccv2022/img/xuedong-circle.jpg" target="_blank" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Xuedong Huang
+                    <br>Microsoft</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="http://web.cs.ucla.edu/~kwchang"><img src="./static/eccv2022/img/kaiwei-circle.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Kai-Wei Chang
+                    <br>UCLA</p>
+            </div>
+            <div class="large-1 columns">
+                <a href="https://jingdongwang2017.github.io/"><img src="./static/eccv2022/img/WangJingdong.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jingdong Wang
+                    <br>Baidu</p>
+            </div>  
+            <div class="large-1 columns">
+                <a href="https://pages.ucsd.edu/~ztu/"><img src="./static/eccv2022/img/ztu_09.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Zhuowen Tu
+                    <br>UCSD</p>
+            </div>  
+            <div class="large-1 columns">
+                <a href="https://www.microsoft.com/en-us/research/people/jfgao/"><img src="https://www.microsoft.com/en-us/research/uploads/prod/2020/09/20191101_170350330_iOS-4.jpg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jianfeng Gao
+                    <br>Microsoft</p>
+            </div>                
+            <div class="large-1 columns">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-1 columns">
+            </div>
+            <div class="large-1 columns">
+                <a href="https://people.ece.uw.edu/hwang/"><img src="./static/eccv2022/img/hwang-circle.jpg" target="_blank" class="home_team_picture style=" width="70" height="70" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Jenq-Neng Hwang
+                    <br>University of Washington</p>
+            </div>  
+            <div class="large-1 columns">
+                <a href="https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en"><img src="./static/eccv2022/img/lecun.jpeg" class="home_team_picture style=" width="75" height="75" ;>
+                    <br><br>
+                </a>
+                <p style="font-size:12px; font-weight: 200;">Yann LeCun
+                    <br>NYU/Meta</p>
+            </div> 
+            <hr>
+        </div>        
+        <div class="row">
+            <div class="disclaimer">
+                Disclaimer: To ensure fair comparisons in the challenge, the evaluation server and leaderboards are independently developed and maintained by the <b>Workshop Organizers</b>, while the <b>Challege Organizers</b> actively promote and contribute to the competitions.
+            </div>
+        </div>
+        <hr>
+    </div>
+</div> -->
+
+        <!-- Contact Information -->
+        <div class="large-12 columns" style="background: white;">
+            <p style="color:black; text-align:center; display:block; margin-top:7px;">Workshop and Challenge Questions?
+                <br>
+                Reach out: <a href="https://computer-vision-in-the-wild.github.io/cvpr-2024/" target="_top">https://github.com/Computer-Vision-in-the-Wild/cvpr-2024</a>
+                <br>
+                Workshop Organizing Team
+            </p>
+        </div>
+    </section>
+    <script>
+    $(document).foundation();
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63638588-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- jquery smooth scroll to id's -->
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+        $(".abstract-toggle").click(function () {
+
+        $header = $(this);
+        //getting the next element
+        $content = $header.next();
+        //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+        $content.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of header based on visibility of content div
+            $header.text(function () {
+                //change text based on condition
+                return $content.is(":visible") ? "[Collapse]" : "[Expand]";
+            });
+        });
+
+        });
+    </script>
+</body>
+
+</html>
